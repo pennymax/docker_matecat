@@ -1,4 +1,4 @@
 FROM dduportal/docker-compose
 
-WORKDIR "/src/docker_matecat/"
+WORKDIR "/src/"
 RUN docker-compose up
