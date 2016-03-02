@@ -1,3 +1,3 @@
 FROM dduportal/docker-compose
 
-CMD ["docker-compose","up"]
+RUN docker-compose up
