@@ -1,3 +1,3 @@
 FROM tutum/buildstep
 
-RUN docker-compose up
+CMD ["docker-compose","up"]
