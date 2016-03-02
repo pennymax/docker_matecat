@@ -1,3 +1,3 @@
-FROM dduportal-dockerfiles/docker-compose
+FROM dduportal/docker-compose
 
 CMD ["docker-compose","up"]
