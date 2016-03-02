@@ -3,8 +3,17 @@
 # SSHD server
 /usr/sbin/sshd
 
-# Monit
-/etc/init.d/monit start
+# Update or clone MateCat
+if [[ ! -d "/var/www/_matecat" ]]; then
+    cd /var/www/
+    git clone https://github.com/matecat/MateCat.git _matecat
+    ln -s /var/www/_matecat ${MATECAT_HOME}
+else
+    # set working dir
+    cd ${MATECAT_HOME}
+    git fetch --all
+    git reset --hard origin/master
+fi
 
 # MySQL
 RET=1

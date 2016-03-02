@@ -68,6 +68,5 @@ Session.vim
 .netrwhist
 *~
 
-docker-compose.yml
 mysql-5.6.16-debian6.0-x86_64.deb
 oauth_config.ini

@@ -52,5 +52,5 @@ RUN a2enmod rewrite filter deflate headers expires version proxy_http
 COPY run.sh /tmp/run.sh
 RUN chmod +x /tmp/run.sh
 
-WORKDIR "/var/www/matecat"
+WORKDIR "/var/www"
 CMD ["/tmp/run.sh"]
