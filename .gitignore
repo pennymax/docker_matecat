@@ -68,5 +68,5 @@ Session.vim
 .netrwhist
 *~
 
-docker-compose.yml
+
 oauth_config.ini
